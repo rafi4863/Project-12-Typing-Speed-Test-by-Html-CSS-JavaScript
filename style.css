@@ -1,0 +1,152 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('images/images.jpeg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    width: 750px;
+    max-width: 90%; /* Mobile responsive */
+    height: auto;
+    border-radius: 20px;
+    margin: 100px auto;
+    padding: 30px 20px;
+
+    /* Glassmorphism Style */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 2px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+    text-align: center;
+}
+
+
+
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 24px auto;
+    width: 400px;
+    border: 2px solid black;
+    padding: 15px 0px;
+    border-radius: 10px;
+    background-color: black;
+    color: lime;
+}
+
+h3{
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: white;
+}
+
+input{
+    width: 85%;
+    height: 35px;
+    font-size: 18px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+}
+button:hover{
+    background-color: rgb(2, 104, 2);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* -----------------------------
+   Mobile Devices
+------------------------------ */
+@media (max-width: 600px) {
+    h1{
+        font-size: 24px;
+        padding: 12px 0px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    input{
+        font-size: 16px;
+        height: 35px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    #resultBox{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .container{
+        padding: 20px 15px;
+    }
+}
+
+/* -----------------------------
+   Tablet Devices
+------------------------------ */
+@media (max-width: 900px) {
+    h1{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    input{
+        font-size: 17px;
+        height: 38px;
+    }
+
+    button{
+        font-size: 18px;
+        padding: 7px 14px;
+    }
+
+    #resultBox{
+        font-size: 18px;
+    }
+
+    .container{
+        padding: 25px 18px;
+    }
+}
