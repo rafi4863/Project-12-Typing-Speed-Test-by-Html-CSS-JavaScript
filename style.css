@@ -86,67 +86,60 @@ button:hover{
 
 
 
-
 /* -----------------------------
-   Mobile Devices
------------------------------- */
-@media (max-width: 600px) {
-    h1{
-        font-size: 24px;
-        padding: 12px 0px;
-    }
-
-    h3{
-        font-size: 16px;
-    }
-
-    input{
-        font-size: 16px;
-        height: 35px;
-    }
-
-    button{
-        font-size: 16px;
-        padding: 6px 12px;
-    }
-
-    #resultBox{
-        font-size: 16px;
-        margin-top: 15px;
-    }
-
-    .container{
-        padding: 20px 15px;
-    }
-}
-
-/* -----------------------------
-   Tablet Devices
+   Tablet Devices (width < 900px)
 ------------------------------ */
 @media (max-width: 900px) {
     h1{
         font-size: 28px;
+        width: 90%;
     }
-
     h3{
         font-size: 17px;
     }
-
     input{
         font-size: 17px;
         height: 38px;
     }
-
     button{
         font-size: 18px;
         padding: 7px 14px;
     }
-
     #resultBox{
         font-size: 18px;
+        width: 85%;
     }
-
     .container{
         padding: 25px 18px;
+    }
+}
+
+/* -----------------------------
+   Mobile Devices (width < 600px)
+------------------------------ */
+@media (max-width: 600px) {
+    h1{
+        font-size: 24px;
+        width: 100%;       /* Full container width */
+        max-width: 100%;   /* Prevent overflow */
+    }
+    h3{
+        font-size: 16px;
+    }
+    input{
+        font-size: 16px;
+        height: 35px;
+    }
+    button{
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    #resultBox{
+        font-size: 16px;
+        width: 90%;
+        margin-top: 15px;
+    }
+    .container{
+        padding: 20px 15px;
     }
 }
